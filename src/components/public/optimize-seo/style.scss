@@ -1,0 +1,14 @@
+.optimize-seo-page {
+    .optimize-seo-page__form_footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.optimize-seo-page__image-upload {
+    text-align: left;
+    padding-left: 10px;
+    .ant-upload.ant-upload-select-picture-card {
+        width : 70px;
+        height: 70px;
+    }
+}

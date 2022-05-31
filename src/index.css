@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* p, a, b, strong, label, span, li, input, textarea, select {
+	font-family: "Poppins", sans-serif;
+    font-size: 16px;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Poppins", sans-serif !important;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* .strip-select-tool p, b, strong, label, li, input, textarea, select {
+	font-family: "Montserrat", sans-serif;
+    line-height: 1.5715;
+    font-size: 14px;
+} */

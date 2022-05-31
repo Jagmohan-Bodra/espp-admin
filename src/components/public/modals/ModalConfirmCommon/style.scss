@@ -1,0 +1,29 @@
+.modal-confirm {
+    .box-info-class {
+        margin: 25px 0px 10px 0px;
+        span, strong {
+            color: #666; 
+        }
+
+        .box-info-startdate {
+            color: black;    
+        }
+    }
+}
+.modal-confirm__footer {
+    margin: 5px 0px;
+    .ant-btn {
+        color: white;
+        font-weight: bold;
+        border-radius: 50px;
+        padding: 5px 20px;
+        min-width: 100px;
+    }
+    .success-btn {
+        background-color: #2da820;
+    }
+    .cancel-btn {
+        background-color: #ff001a;
+        
+    }
+}

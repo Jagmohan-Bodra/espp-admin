@@ -1,0 +1,65 @@
+.p_search_bar_modal_component {
+    .ant-modal-content {
+        .ant-modal-header {
+            padding: 0;
+            .ant-modal-title {
+                .ant-input-affix-wrapper {
+                    .ant-input-prefix {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        .ant-modal-body {
+            padding: 0;
+        }
+    }
+    .p_search_bar_modal_component__hr::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        display: block;
+        border-right: 1px solid $primary-1;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        padding: 7px;
+        content: '';
+    }
+
+    .title-control {
+        font-size: 14px;
+        font-weight: bold;
+        color: #1cabdf;
+        text-transform: uppercase;
+    }
+    .p_search_bar_modal_component__horizontal_text {
+        font-size: 12px;
+        line-height: 2.4em;
+        .p_search_bar_modal_component__horizontal_text--title {
+            color: #8d9496;
+        }
+        .p_search_bar_modal_component__horizontal_text--content {
+            color: #000000;
+            font-weight: 500;
+        }
+        .p_search_bar_modal_component__horizontal_text--content-l {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .p_search_bar_modal_component__horizontal_text--decription {
+            font-weight: normal;
+            font-style: italic;
+            color: #a0a6a8;
+            font-size: 14px;
+        }
+    }
+    .p_search_bar_modal_component__user_layout {
+        .p_search_bar_modal_component__user_layout--menu {
+            max-height: 300px;
+            overflow-y: scroll;
+        }
+        .p_search_bar_modal_component__user_content_item {
+            padding: 15px;
+        }
+    }   
+}

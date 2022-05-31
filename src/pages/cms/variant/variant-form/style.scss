@@ -1,0 +1,202 @@
+.group-variant {
+  box-shadow: 0 7px 14px 0 rgba(65,69,88,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+  position: relative;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid #edf2f9;
+  border-radius: .375rem;
+  padding: 15px 15px;
+  margin-bottom: 15px;
+  .group-variant_title {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #2c7be5;
+  }
+}
+
+.variant-form {
+  .ant-row {
+    margin-bottom: 1em;
+  }
+}
+
+.type-variant {
+  padding: 0 15px;
+  margin-bottom: 30px;
+  .type-variant-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .type-variant-group_label {
+      line-height: 2.4em;
+      font-size: 1.2rem;
+      color: #5e6e82;
+    }
+    &_order {
+      line-height: 2.4em;
+      font-size: 12px;
+      color: black;
+    }
+  }
+  
+  .avatar-uploader-public.ant-upload-picture-card-wrapper .ant-upload.ant-upload-select-picture-card {
+    width: 100%;
+    height: auto;
+    .ant-upload {
+      padding: 15px;
+    }
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      width: auto !important;
+      min-height: 100px;
+    }
+  }
+}
+
+.product-template {
+  height: 100%;
+  border-radius: .25rem;
+  border: 1px solid #d8e2ef;
+  padding-bottom: 1rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: flex;
+  cursor: pointer;
+  &:hover {
+    background: #ccc1;
+  }
+  &_image_group {
+    -webkit-mask-image: radial-gradient(#fff,#000);
+    mask-image: radial-gradient(#fff,#000);
+    position: relative;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    &_image img{
+      border-top-left-radius: .25rem;
+      border-top-right-radius: .25rem;
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      border-style: none;
+    }
+    &_checkbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: .5rem
+    }
+  }
+  &_body {
+    padding: 1rem;
+    &_title {
+      font-size: 1rem;
+      margin-bottom: .25rem;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #0b1727;
+    }
+    &_category {
+      font-size: .83333rem;
+      margin-bottom: 1rem;
+      color: #9da9bb;
+    }
+    &_status {
+      font-size: .83333rem;
+      margin-bottom: .25rem;
+    }
+  }
+}
+
+.post-template {
+  height: 100%;
+  border-radius: .25rem;
+  border: 1px solid #d8e2ef;
+  padding-bottom: 1rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: flex;
+  cursor: pointer;
+  &:hover {
+    background: #ccc1;
+  }
+  &_image_group {
+    -webkit-mask-image: radial-gradient(#fff,#000);
+    mask-image: radial-gradient(#fff,#000);
+    position: relative;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    &_image img{
+      border-top-left-radius: .25rem;
+      border-top-right-radius: .25rem;
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      border-style: none;
+    }
+    &_checkbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: .5rem
+    }
+  }
+  &_body {
+    padding: 1rem;
+    &_title {
+      font-size: 1rem;
+      margin-bottom: .25rem;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #0b1727;
+    }
+    &_category {
+      font-size: .83333rem;
+      margin-bottom: 1rem;
+      color: #9da9bb;
+    }
+    &_status {
+      font-size: .83333rem;
+      margin-bottom: .25rem;
+    }
+  }
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+.up-arrow-icon {
+  color: orange;
+  cursor: pointer;
+}
+
+.down-arrow-icon {
+  cursor: pointer;
+  margin-right: 15px;
+}

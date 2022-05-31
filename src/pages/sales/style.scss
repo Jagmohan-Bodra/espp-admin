@@ -1,0 +1,117 @@
+@import '~/public/assets/style/color.scss';
+.orders-list-page {
+    .orders-list-page__button-left {
+        display: flex;
+        justify-content: space-between;
+    }
+    .kanban_group{
+        .kanban {
+            padding: 0px 2px;
+        }       
+    }
+}
+.sales-orders-tab-detail {
+    .sales-orders-tab-detail__table-total {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px;
+        color: #727272;
+        .sales-orders-tab-detail__table-total-left {
+            text-align: end;
+            margin-right: 60px;
+        }
+        .sales-orders-tab-detail__table-total-right {
+            text-align: start;
+            margin-right: 100px;
+        }
+    }
+}
+.sales-orders-form {
+    span {
+        color: #4B5B79;
+    }
+    .sales-orders-form__button-dropdown {
+        color: #4B5B79;
+        background-color: #f0f2f5;
+        border: none;
+        border-radius: 5px;
+    }
+    &_breadcrumb {
+        display: flex;
+        justify-content: space-between;
+        &_btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 25px;
+            .btn-status {
+                width: 135px;
+                text-align: left;
+                padding: 5px 15px;
+            }
+            .active {
+                color: #28a745;
+            }
+            .archive {
+                color: #dc3545;
+            }
+            .btn-active {
+                cursor: pointer;
+                border: 1px solid #28a745;
+            }
+            .btn-archive {
+                cursor: pointer;
+                border: 1px solid #dc3545;
+            }
+        }
+    }
+    &__button.active {
+        background-color: #f0f2f5;
+        @include color_blue_main;
+    }
+    &__button {
+        overflow: hidden;
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        width: 180px;
+        justify-content: flex-start;
+        .span {
+            color: #666;
+        }
+        :active {
+            box-shadow: none;
+            background: none;
+        }
+    }
+    &__col-right {
+        border-left: 0.9px solid #eee;
+        padding: 0px 20px;
+    }
+    .sales-orders-form__order_status {
+        flex-direction: row;
+        width: 250px;
+        .sales-orders-form__order_status_select {
+            .ant-select-selector {
+                border: none !important;
+                color: #4B5B79;
+                background-color: #f0f2f5;
+                border-radius: 5px;
+            }
+        }
+    }
+    .sales-orders-form__enquiry_status_select {
+        .ant-select-selector {
+            border: none !important;
+            background-color: #021389;
+            border-radius: 5px;
+            .ant-select-selection-item {
+                color: #fff;
+            }
+        }
+        .ant-select-arrow > span {
+            color: #fff;
+        }
+    }
+}

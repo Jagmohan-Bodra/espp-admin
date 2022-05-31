@@ -1,0 +1,11 @@
+.title-name {
+    font-weight: 600;
+    color: #2D2D2D;
+    text-align: center;
+}
+
+@media (max-width: 993px) {
+    .admin-user-list .ant-table-wrapper table {
+        width: 250% !important;               
+    }
+}

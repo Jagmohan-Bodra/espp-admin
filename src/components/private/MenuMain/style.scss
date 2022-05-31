@@ -1,0 +1,17 @@
+.menu-main-component__wrapper-menu-items { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+
+    .p_avatar_component {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 50px;
+        cursor: pointer;
+    }
+}

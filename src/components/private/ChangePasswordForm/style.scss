@@ -1,0 +1,23 @@
+.table-list-profile{
+    padding: 0px;
+}
+
+.pt-box-profile-avatar .ant-upload.ant-upload-select-picture-card {
+    border-radius: 50%;
+    padding: 5px;
+    .ant-upload img {
+        border-radius: 50%;
+        height: inherit;
+    }
+}
+
+.component-page-profile-form {
+    .box-change-pass {
+        margin-top: 20px;
+    }   
+}
+
+.component-change-password__label-control {
+    font-weight: 600;
+    color: #727272;
+}

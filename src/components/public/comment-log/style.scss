@@ -1,0 +1,45 @@
+.p_comment_log_component {
+    max-height: 300px;
+    overflow-y: scroll;
+    .p_comment_log_component__comment {
+        .ant-divider-horizontal.ant-divider-with-text::before, .ant-divider-horizontal.ant-divider-with-text::after {
+            border-top: 2px solid rgba(0, 0, 0, 0.12);
+        }
+        .p_comment_log_component__comment_layout{
+            display: flex;
+            padding: 4px 16px;
+            margin-bottom: 0px;
+            box-sizing: border-box;
+            .p_comment_log_component__comment_layout--avatar {
+                flex: 0 0 36px;
+                margin-right: 10px;
+                margin-top: 2px;
+                text-align: center;
+            }
+            .p_comment_log_component__comment_layout--content {
+                -webkit-box-flex: 1;
+                -webkit-flex: 1 1 auto;
+                flex: 1 1 auto;
+                min-width: 0;
+                max-width: 100%;
+                word-wrap: break-word;
+                box-sizing: border-box;
+                .p_comment_log_component__comment_layout--content_label {
+                    .p_comment_log_component__comment_layout--content_label_name {
+                        color: #adb5bd;
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+                    .p_comment_log_component__comment_layout--content_label_datetime {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #adb5bd ;
+                    }
+                }
+                .p_comment_log_component__comment_layout--content_comment {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

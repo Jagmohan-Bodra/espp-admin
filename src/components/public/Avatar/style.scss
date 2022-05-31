@@ -1,0 +1,29 @@
+$main: #021389;
+@import '~/public/assets/style/common.scss';
+
+.p_avatar_component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;    
+    margin: 35px 40px;
+    cursor: pointer;
+
+    .ant-avatar-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        -webkit-box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.1);
+
+        img {
+            width: auto;
+            height: auto;
+        }
+    }
+    .p_avatar_component__avatar-name {
+        font-size: 18px;
+    }
+}

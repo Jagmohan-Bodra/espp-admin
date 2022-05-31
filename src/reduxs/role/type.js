@@ -1,0 +1,10 @@
+export const GET_ROLE_LIST = 'GET_ROLE_LIST';
+export const GET_ROLE_ITEM = 'GET_ROLE_ITEM';
+export const ROLE_ITEM_UPDATE = 'ROLE_ITEM_UPDATE';
+export const ROLE_ITEM_IN_ACTIVE = 'ROLE_ITEM_IN_ACTIVE';
+export const ROLE_CREATE = 'ROLE_CREATE';
+
+export const ROLE_LOADING = 'ROLE_LOADING';
+export const ROLE_IS_CREATE = 'ROLE_IS_CREATE';
+export const ROLE_IS_UPDATE = 'ROLE_IS_UPDATE';
+export const ROLE_IS_DELETE = 'ROLE_IS_DELETE';

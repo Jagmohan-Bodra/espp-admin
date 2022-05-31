@@ -1,0 +1,153 @@
+@import '~/public/assets/style/common.scss';
+
+.form-card-component {
+    @include box_shadow_card;
+
+    &__card {
+        padding: 35px 25px 10px 25px;
+    }
+}
+
+
+.switch-block-component {
+    display: flex;
+    span {
+        color: #f0f2f5;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .switch-block-text-left {      
+        margin-right: 10px;
+    }
+    .switch-block-text-left.active, .switch-block-text-right.active {      
+        color: #4caf50 ;
+    }
+    .switch-block-text-right {      
+        margin-left: 10px;
+    }
+}
+.check-box-list {
+    border: solid #eee 1px;
+    padding: 10px 10px 0px 10px;
+    margin-top: 5px;
+}
+
+.form-control-row .form-control-row_dicrecion {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.form-control-row_label {
+    margin-right: 15px;
+    font-weight: 600;
+    color: #727272;
+}
+
+.form-control-row_text {
+    color: #4B5B79;
+}
+
+.input-loading-row {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row-label-status {
+    .box-icon-check-status {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.wrap-select-bur {
+    width: 85%;
+    min-height: 20px;
+    cursor: pointer;
+}
+
+.row-label-status .box-icon-check-status:hover,
+.wrap-select-bur:hover {
+    background-color: #eee;
+}
+
+.loader-change {
+    margin-left: 10px;
+    border: 1px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 1px solid #3498db;
+    width: 15px;
+    height: 15px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .input-block {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hover-change-mouse {
+    border-bottom: solid 1px transparent;
+    width: -webkit-fill-available;
+    position: relative;
+    display: inline-block;
+    .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #EAECF0;
+        color: #4B5B79;
+        text-align: center;
+        border-radius: 6px;
+        padding: 0;
+        position: absolute;
+        z-index: 1;
+        top: 130%;
+        left: 50%;
+        margin-left: -60px;
+      }
+    .tooltiptext::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #EAECF0 transparent;
+      }
+}
+
+.hover-change-mouse:hover {
+    border-bottom-color: #EAECF0;
+    cursor: pointer;
+    .tooltiptext {
+        visibility: visible;
+      }
+}
+
+.input-error {
+    display: block;
+    color: red;
+    background-color: white;
+    font-size: 12px;
+    font-style: italic;
+    &:hover {
+        background-color: white;
+    }
+}

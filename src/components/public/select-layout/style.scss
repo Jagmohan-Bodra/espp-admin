@@ -1,0 +1,10 @@
+.p_table_filter_dropdown_component__checkbox_layout {
+  overflow-y: scroll;
+  max-height: 400px;
+  .ant-checkbox-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+}

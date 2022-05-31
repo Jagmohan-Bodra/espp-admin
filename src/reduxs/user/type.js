@@ -1,0 +1,10 @@
+export const GET_USER_LIST = 'GET_USER_LIST';
+export const GET_USER_ITEM = 'GET_USER_ITEM';
+export const USER_ITEM_UPDATE = 'USER_ITEM_UPDATE';
+export const USER_ITEM_IN_ACTIVE = 'USER_ITEM_IN_ACTIVE';
+export const USER_CREATE = 'USER_CREATE';
+
+export const USER_LOADING = 'USER_LOADING';
+export const USER_IS_CREATE = 'USER_IS_CREATE';
+export const USER_IS_UPDATE = 'USER_IS_UPDATE';
+export const USER_IS_DELETE = 'USER_IS_DELETE';

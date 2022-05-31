@@ -1,0 +1,64 @@
+stages:
+  - test
+  - build
+  - deploy
+
+ci-lint:
+  stage: test
+  image: node:12
+  script:
+    - npm i
+    - npm run lint
+
+build-docker-staging:
+  only: [staging-deploy]
+  stage: build
+  image: docker:19.03.12
+  services:
+    - docker:19.03.12-dind
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build -t registry.gitlab.com/wioutsource/espp-store/admin-portal:staging .
+    - docker push registry.gitlab.com/wioutsource/espp-store/admin-portal:staging
+
+deploy-staging:
+  only: [staging-deploy]
+  stage: deploy
+  image: registry.gitlab.com/wioutsource/espp-store/devops:ansible
+  before_script:
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - eval "$(ssh-agent -s)"
+    - ssh-add ~/.ssh/id_rsa
+  script:
+    - cd /work/ansible
+    - ANSIBLE_HOST_KEY_CHECKING=false ansible-playbook -i inventory/staging playbook.yml
+
+
+#**** production ***#
+
+build-docker-prod:
+  only: [master]
+  stage: build
+  image: docker:19.03.12
+  services:
+    - docker:19.03.12-dind
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build -t registry.gitlab.com/wioutsource/espp-store/admin-portal:prod .
+    - docker push registry.gitlab.com/wioutsource/espp-store/admin-portal:prod
+
+deploy-prod:
+  only: [master]
+  stage: deploy
+  image: registry.gitlab.com/wioutsource/espp-store/devops:ansible
+  before_script:
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - eval "$(ssh-agent -s)"
+    - ssh-add ~/.ssh/id_rsa
+  script:
+    - cd /work/ansible
+    - ANSIBLE_HOST_KEY_CHECKING=false ansible-playbook -i inventory/prod playbook.yml

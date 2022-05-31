@@ -1,0 +1,27 @@
+.o_focus_point {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 100%;
+  box-shadow: 0 0 1px #333;
+  pointer-events: none;
+  color: white;
+}
+
+.position_image_component {
+  position: relative;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  padding: 0;
+  // height: 0;
+  padding-bottom: 100%;
+  background-size: 100%;
+  border: 1px solid black;
+}

@@ -1,0 +1,39 @@
+.p_screen_switch_button_component {
+    background-color: transparent;
+    .ant-space-item {
+        background-color: transparent;
+        button {
+            color: #201389;
+            background-color: #6c84fd47;
+            border: none;
+            font-size: 14px;
+            // height: 40px;
+            min-width: 40px;
+            font-weight: bold;
+            &.active {
+                color: #fff;
+                background-color: #201389;
+            }
+        }
+        &:first-child {
+            button {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+        }
+        &:last-child {
+            button {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        }
+        &:nth-child(2) {
+            // border-right: 1px solid $primary-1;
+            margin-right: 6px;
+        }
+        &:nth-child(1) {
+            // border-right: 1px solid $primary-1;
+            margin-right: 0px !important;
+        }
+    }
+}

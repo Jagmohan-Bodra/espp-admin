@@ -1,0 +1,63 @@
+{
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules": "commonjs",
+          "targets": {
+            "browsers": [
+              "last 3 Chrome versions",
+              "last 3 Firefox versions"
+            ]
+          }
+        }
+      ],
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      [
+        "lodash",
+        {
+          "id": [
+            "lodash"
+          ]
+        }
+      ],
+      [
+        "babel-plugin-root-import",
+        {
+            "rootPathSuffix": "./src",
+            "rootPathPrefix": "~/"
+        }
+      ],
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-transform-runtime",
+      "@babel/plugin-proposal-object-rest-spread"
+    ],
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "@babel/preset-env",
+              {
+                "modules": "commonjs"
+              }
+          ],
+          "@babel/preset-react"
+        ],
+        "plugins": [
+          [
+            "lodash",
+            {
+              "id": [
+                "lodash"
+              ]
+            }
+          ],
+          "@babel/plugin-proposal-class-properties",
+          "@babel/plugin-transform-runtime",
+          "@babel/plugin-proposal-object-rest-spread"
+        ]
+      }
+    }
+  }

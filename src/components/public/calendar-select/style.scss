@@ -1,0 +1,11 @@
+.p_calendar_select_component {
+    .ant-picker {
+        @include box_shadow_default;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        input[--nth-letter="1"] {
+            font-weight: bold;
+        }
+    }
+}

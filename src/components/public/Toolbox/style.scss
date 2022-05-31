@@ -1,0 +1,15 @@
+.toolbox-component {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    .flex-right {
+        justify-content: flex-end;
+    }
+}
+.orders-list-page .orders-list-page,
+.sales-orders-form, .crm-customer-form,
+.product-list-page,
+.customer-list-page{
+    justify-content: space-between;
+    width: 100%;
+}

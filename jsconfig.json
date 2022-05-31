@@ -1,0 +1,21 @@
+{
+    "typeAcquisition": {
+        "exclude": [
+            "dotenv"
+        ]
+    },
+    "exclude": [
+        "node_modules/*",
+        "dist/*",
+        ".git",
+    ],
+    "compilerOptions": {
+        "jsx": "react",
+        "baseUrl": ".",
+        "paths": {
+            "~/*": [
+                "src/*"
+            ]
+        }
+    }
+}

@@ -1,0 +1,80 @@
+$main: #021389;
+// Reset css
+.cms-management-header-page {
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover, 
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover, 
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:focus, 
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active, 
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active, 
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open, 
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open, 
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected, 
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected,   
+  .ant-menu-item:hover, .ant-menu-item-active, 
+  .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, 
+  .ant-menu-submenu-active, .ant-menu-submenu-title:hover,
+  .ant-menu-submenu-active, .ant-menu-submenu-title:active,
+  .ant-menu-submenu-active, .ant-menu-submenu-title:focus,
+  .ant-menu-horizontal
+  {
+    border: none !important;
+    background-color: unset !important;
+    color: white !important;
+    border-bottom: none !important;
+    outline: none;
+    transition: unset;
+    box-shadow: none
+  }
+
+  .ant-menu-dark .ant-menu-item, 
+  .ant-menu-dark .ant-menu-item-group-title, 
+  .ant-menu-dark .ant-menu-item > a, 
+  .ant-menu-dark .ant-menu-item > span > a {
+    color: white;
+    font-weight: 500;
+  }
+}
+
+.cms-management-header-page {
+
+  background-color: $main;
+  color: white;
+  font-weight: 500;
+  padding: 0px 15px;
+  width: 100%;
+
+  .cms-management-header-page_menu {
+    background-color: $main;
+    color: white;
+    
+    li {
+      margin: 0px;
+      padding: 0 20px;
+      margin-top: -1px;
+      color: white;
+      font-weight: 500;
+    }    
+  }  
+}
+
+.header-component__title-group {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected, 
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected ,
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: $main;
+}
+
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, 
+.ant-menu.ant-menu-dark .ant-menu-sub,
+.ant-menu-dark.ant-menu-submenu-popup {
+  background-color: $main;
+  top: 45px !important;
+  li {
+    color: white;
+    font-weight: 500;
+  }
+}

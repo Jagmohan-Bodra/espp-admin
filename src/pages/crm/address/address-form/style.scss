@@ -1,0 +1,21 @@
+.address-form {
+  display: flex;
+  &_input {
+    padding-right: 15px;
+  }
+  &_avatar {
+    display: flex;
+    flex: 0 0 70px;
+  }
+  .form-row {
+    display: flex;
+    margin-bottom: 1rem;
+    &-left {
+      display: flex;
+      flex: 0 0 100px;
+    }
+    &-right {
+      display: flex;
+    }
+  }
+}

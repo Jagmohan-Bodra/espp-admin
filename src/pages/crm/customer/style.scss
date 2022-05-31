@@ -1,0 +1,127 @@
+@import '~/public/assets/style/color.scss';
+
+.crm-customer-form {
+    .ant-breadcrumb {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 75%;
+    }
+    &__button.active {
+        background-color: #EAECF0;
+        @include color_blue_main;
+    }
+    &__button {
+        overflow: hidden;
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        min-width: 230px;
+        justify-content: flex-start;
+        .span {
+            color: #666;
+        }
+        :active {
+            box-shadow: none;
+            background: none;
+        }
+    }
+    &__col-right {
+        border-left: 0.9px solid #eee;
+        padding: 0px 20px;
+    }
+    .crm-customer-form__button-dropdown {
+        color: #4B5B79;
+        background-color: #EAECF0;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+.crm-customer-tab {
+    padding-left: 50px;
+    .text-total {
+        @include color_pale;
+    }
+}
+
+.crm-customer-tab.tab-order-history {
+    padding-left: 10px;
+}
+
+.admin-customer-list {
+    .group-button-create {
+        display: flex;
+    }
+}
+
+.tab-internal-notes {
+    .ant-avatar-image {
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        width: 40px;
+        height: 40px;
+        box-shadow: 0px 2px 4px 0px rgba(32,43,36,0.28);
+    }
+
+    .ant-comment {
+        border-bottom: 1px solid #eee;
+    }
+
+    .ant-comment:last-child {
+        border-bottom: none;
+    }
+
+    .ant-comment-content-author > span.ant-comment-content-author-name {
+        font-weight: 500;
+        color: #727272;
+        font-size: 13px;
+        text-transform: capitalize;
+    }
+    .ant-comment-content-author-time span {
+        font-size: 13px;
+        color: #999;
+    }
+    .ant-comment-content-detail span {
+        font-size: 14px;
+        color: #4B5B79;
+    }
+
+    .internal-note-editor {
+        border: 1px solid #ddd;
+        padding: 10px 15px;
+        textarea.ant-input {
+            border: none;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+
+    .internal-note-box-button {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+}
+
+.crm-customer-tab {
+    .crm-customer-tab_message_list {
+        height: 500px;
+        overflow-y: scroll;
+    }
+}
+
+.tab-customer-detail {
+    .form-input-value {
+        cursor: no-drop;
+        color: #4B5B79;
+        padding-left: 10px
+    }
+    .form-no-input-value {
+        cursor: no-drop;
+        color: #4B5B79;
+        margin-left: 10px
+    }
+}

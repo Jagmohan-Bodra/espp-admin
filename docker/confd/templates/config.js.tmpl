@@ -1,0 +1,6 @@
+window.config = window.config || {};
+window.config = {
+    apiHost: "{{ getenv "API_HOST" }}",
+    logoutUrl: "{{ getenv "LOGOUT_URL" }}",
+    environment: "{{ getenv "ENVIRONMENT" }}",
+};

@@ -1,0 +1,74 @@
+.card-preview {    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    .ant-card-head {
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    .card-preview-top {
+        .optimize-seo-title {
+            cursor: pointer;
+            color: #1a0dab;
+            font-size: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .optimize-seo-link {
+            color: #006621;
+            font-size: 14px;
+            line-height: 18px;
+          }
+          .optimize-seo-description {
+            font-size: 13px;
+            line-height: 18px;
+            color: #4B5B79;
+            margin-top: 5px;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            display: -webkit-box;
+          }
+    }
+
+    .card-preview-image {        
+        .optimize-seo-image {
+            max-height: 250px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: fit-content;
+                max-width: 100%;            
+            }
+        }        
+        
+        .optimize-seo-title {
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-top: 10px;
+          }
+          .optimize-seo-link {
+            color: #777;
+            font-size: 14px;
+            line-height: 18px;
+          }
+          .optimize-seo-description {
+            font-size: 13px;
+            line-height: 18px;
+            color: #545454;
+            margin-top: 5px;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            display: -webkit-box;
+          }
+    }
+    
+}

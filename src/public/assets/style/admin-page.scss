@@ -1,0 +1,75 @@
+.admin_page {
+    // default
+    .ant-btn {
+        font-size: 16px;
+    }
+
+    .form-card-component .ant-btn[disabled] {
+        background-color: white;
+    }
+
+    .form-card-component .ant-btn[disabled].active {
+        background-color: #f0f2f5;
+    }
+
+    button.default {
+        width: 100px;
+        border: none;
+        box-shadow: 0 10px 40px 0 rgba(39, 47, 99, 0.1);
+    }
+
+    .button-radio {
+      margin-right: 10px;  
+    }
+
+    .admin_page__input_search {
+        @include box_shadow_default;
+        border-radius: 10px;
+        .ant-btn-primary {
+            background: white;
+            border: 0px solid transparent;
+            box-shadow: unset;
+        }
+        .ant-input {
+            border: 0px solid transparent;
+            outline: unset !important;
+            box-shadow: unset;
+            height: 32px;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        .ant-btn {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        .ant-input-group-addon {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        
+    }
+    .admin_page__form,
+    .wapper-form-control {
+        @include box_shadow_default;
+        background-color: white;
+        padding: 15px;
+        margin-bottom: 35px;
+        .text-m {
+            display: block;
+            line-height: 2em;
+        }
+    }
+    .form-control {
+        .ant-row {
+            .ant-col {
+                padding-right: 15px;                
+            }
+        }
+    }
+}
+
+.admin_page__link--forget {
+    margin: 15px 0px;
+    padding: 0px;
+}

@@ -1,0 +1,58 @@
+@import '~/public/assets/style/color.scss';
+
+.crm-product-form {
+    &__button.active {
+        background-color: #f0f2f5;
+        @include color_blue_main;
+    }
+    &__button {
+        overflow: hidden;
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        width: 180px;
+        justify-content: flex-start;
+        .span {
+            color: #666;
+        }
+        :active {
+            box-shadow: none;
+            background: none;
+        }
+    }
+    &__col-right {
+        border-left: 0.9px solid #eee;
+        padding: 0px 20px;
+    }
+}
+.crm-product-tab {
+    padding-left: 50px;
+    .p_table_component .ant-table-thead > tr > th {
+        font-weight: 500;
+        word-wrap: normal;
+    }
+
+    .text-total {
+        @include color_pale;
+    }
+}
+
+.inventory-brand-tab__image-upload {
+    text-align: left;
+    padding-left: 10px;
+    .ant-upload.ant-upload-select-picture-card {
+        width : 70px;
+        height: 70px;
+    }
+}
+
+.crm-product-tab.tab-order-history {
+    padding-left: 10px;
+}
+.product-list-page__button-dropdown {
+    color: #4B5B79;
+    background-color: #f0f2f5;
+    border: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,163 @@
+.login_page {
+    width: 100%;
+
+    .ant-form {
+        max-width: 600px;
+    }
+    .login_page__button {
+        padding: 19px 0px;
+    }
+    .login_page__content--input {
+        height: 42px;
+        border-radius: 8px;
+        padding-left: 20px;
+        input {
+            padding-left: 10px;
+        }
+    }
+    .ant-row {
+        margin: 15px 0px;
+    }
+    .ant-col {
+        margin: 5px 0px;
+    }
+    .login_page__block--login {
+        margin: auto;
+        margin-top: -20px;
+
+        .login_page__col-left {
+            // padding: 0px 11em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;        
+        }
+
+        .login_page__col-right {
+            text-align: right;
+            height: 99vh;
+            overflow: hidden;
+        }
+        
+        .login_page__logo {
+            margin-top: 200px;
+            // height: 306px;
+            // margin: auto;
+            display: block;
+            // margin-bottom: 40px;
+        }
+
+        .login_page__banner {
+            max-width: 100%;
+            min-height: 100vh;
+            width: 100%;
+        }
+        
+        .default {
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            width: 250px;
+            border-radius: 50px;
+            font-weight: bold;
+            background-color: #f2dfd2;
+            color: #555;
+            height: 40px;
+            text-transform: uppercase;
+            span {
+                color: #555;
+                font-size: 16px;
+            }
+        }
+
+        .login_page__row-link--forget {
+            text-align: right;
+        }
+
+        .login_page__link--forget {
+            color: #3d8cf9;
+            text-decoration: underline;
+            font-size: 16px;
+            line-height: 2.5em;
+        }
+    }
+
+    .login_page__block--forget-password {
+        min-width: 30vw;
+        max-width: 50vw;
+        width: 30%;
+        margin: auto;
+        margin-top: 10vh;
+        .login_page__form-forgot-password{
+            max-width: 65%;
+            margin: auto;
+        }
+        .login_page__logo {
+            height: 115px;
+            margin: auto;
+            display: block;
+            margin-bottom: 15px;
+        }
+        .login_page__text-forgot-password{
+            text-align: center;
+            font-weight: 900;
+        }
+        .login_page__content-forgot-password{
+            text-align: center;
+        }
+        .default {
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            width: 350px;
+            border-radius: 50px;
+            font-weight: bold;
+            background-color: #f2dfd2;
+            color: #555;
+            font-size: 16px;
+            height: 40px;
+            text-transform: uppercase;
+        }
+        .login_page__logo--title {
+            text-align: center;
+            display: block;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .login_page__label-forgot-password{
+            font-weight: 700;
+            line-height: 5;
+            font-size: 17 !important;
+        }
+        .login_page__btn-forgot-password{
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            width: 65%;
+            border-radius: 50px;
+            font-weight: bold;
+            background-color: #f2dfd2;
+            color: #555;
+            font-size: 16px;
+            height: 40px;
+            text-transform: uppercase;
+        }
+        .login_page__back-to-login{
+            text-decoration: underline;
+            text-decoration-color: #3d8cf9;
+            text-align: center;
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .login_page {
+        .login_page__col-left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 25px !important;
+        }
+        
+    }
+}

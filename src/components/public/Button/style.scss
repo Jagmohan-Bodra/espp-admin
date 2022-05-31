@@ -1,0 +1,125 @@
+$main: #021389;
+$gray: #EAECF0;
+$grayText: #4B5B79;
+
+.p_button_component__btn-main {
+    background-color: $main;
+    border-color: $main;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        color: white;
+        font-weight: 500;
+    }
+
+    &:hover {
+        background-color: $main;
+        border-color: $main;
+        color: white;
+        span {
+            color: white;
+        }
+    }
+}
+
+.p_button_component__btn-dropdown-gray,
+.p_button_component__btn-gray {
+    background-color: $gray;
+    border-color: $gray;
+    color: $grayText;
+    font-weight: 500;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        color: $grayText;
+        font-weight: 500;
+    }
+
+    &:hover {
+        background-color: $gray;
+        border-color: $gray;
+        color: $grayText;
+        span {
+            color: $grayText;
+        }
+    }
+}
+
+.p_button_component__btn-danger {
+    background-color: red;
+    border-color: red;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        color: white;
+        font-weight: 500;
+    }
+
+    &:hover {
+        background-color: red;
+        border-color: red;
+        color: white;
+        span {
+            color: white;
+        }
+    }
+}
+
+.p_button_component__btn-link {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #1890ff;
+    padding: 0px 2px;
+    font-weight: 500;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    span {
+        color: $grayText;
+        font-weight: 500;
+    }
+
+    &:hover {
+        background-color: transparent;
+        border-color: transparent;
+        color: $grayText;
+        span {
+            color: $grayText;
+        }
+    }
+    &:focus {
+        background-color: transparent;
+        border-color: transparent;
+        color: #1890ff;
+        span {
+            color: $grayText;
+        }
+    }
+}
+
+.btn-actions-component {
+    border: 0;
+    font-weight: 900;
+    font-size: 14px;
+    background-color: transparent;
+    box-shadow: none;
+    button.ant-dropdown-trigger {
+        display: inline-block;
+        border: none;
+    }
+}
+
+button.btn-actions-component:hover {
+    background-color: transparent;
+}
